@@ -33,7 +33,7 @@
       var map, infoWindow;
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
-            center: {lat: -8.34, lng: 125.34},  
+            center: {lat: -8.5551305, lng: 125.5769744},  
           zoom: 8
         });
         infoWindow = new google.maps.InfoWindow;
@@ -68,7 +68,10 @@
       }
     </script>
     <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOjWQz_Ofk8SKW1EAfCBTthFPKCfRrV1w&callback=initMap">
+            
+    src="https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyAOjWQz_Ofk8SKW1EAfCBTthFPKCfRrV1w&callback=initMap">      
+            
+ 
     </script>
   </body>
 </html>
