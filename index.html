@@ -6,6 +6,7 @@
       type="image/png" 
       href="https://caravela.files.wordpress.com/2016/07/ico.png">
     
+    
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
     <style>
@@ -32,7 +33,7 @@
       var map, infoWindow;
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -8.5551305, lng: 125.5769744},  
+            center: {lat: -8.5551305, lng: 125.5769744},  
           zoom: 8
         });
         infoWindow = new google.maps.InfoWindow;
@@ -46,7 +47,7 @@
             };
 
             infoWindow.setPosition(pos);
-            infoWindow.setContent('Agora Hau Besik Suku Ne');
+            infoWindow.setContent('Location found.');
             infoWindow.open(map);
             map.setCenter(pos);
           }, function() {
@@ -67,10 +68,11 @@
       }
     </script>
     <script async defer
-    src="https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyAOjWQz_Ofk8SKW1EAfCBTthFPKCfRrV1w&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
     </script>
   </body>
 </html>
+
 
 
 <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Ffacebook.com%2Faudiovisualarchivetimorleste&width=570&layout=standard&action=like&size=large&show_faces=true&share=true&height=100&appId=1138847206148818" width="570" height="100" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>  
